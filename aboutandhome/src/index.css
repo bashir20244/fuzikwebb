@@ -1,0 +1,52 @@
+/* استيراد خط Roboto Serif */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;500;700&display=swap');
+
+:root {
+  /* إعداد الخط الأساسي */
+  font-family: 'Roboto Serif', serif;
+  line-height: 1.5;
+
+  /* إعداد الألوان */
+  --primary-color: #326075;
+  --background-color: #121212;
+  --white-color: #ffffff;
+}
+
+/* إعداد خصائص الـ body */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  text-transform: capitalize;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  color: var(--white-color);
+  font-family: 'Roboto Serif', serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+.btn{
+padding: 10px 40px;
+font-size: 16px;
+cursor: pointer;
+background-color: #326075;
+color: white;
+border: none;
+border-radius: 5px;
+transition: background-color 0.3s;
+text-transform: capitalize;
+}
+
+.btn:hover {
+  background-color: #284b63;
+  color: white;
+}
+
+

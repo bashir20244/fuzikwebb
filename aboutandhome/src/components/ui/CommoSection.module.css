@@ -1,0 +1,21 @@
+.commom__section {
+    margin: 50px 0; 
+  }
+  .commom__section__hero{
+    display: flex;
+    justify-content: center; /* لضبط المحتوى أفقياً في المنتصف */
+    align-items: center; /* لضبط المحتوى عمودياً في المنتصف */
+    height: 100%;
+}
+ h2 {
+    background: linear-gradient(to right, white, #326075); /* الخلفية المتدرجة */
+    -webkit-background-clip: text; /* تحديد أن التدرج سيكون على النص فقط */
+    color: transparent; /* جعل النص شفاف حتى يظهر التدرج */
+    padding: 20px 0;
+    border-radius: 5px; /* لتنعيم الزوايا */
+    text-align: center;
+    font-size: 48px;
+  
+  }
+  
+  
