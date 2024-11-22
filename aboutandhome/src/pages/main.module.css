@@ -285,6 +285,179 @@
 }
 
 }
+/*``````````````````````````````````````````OUR TEAM PAGE ```````````````````````````````````````````````````````````````*/
+
+.ourteam { 
+  height: 350px;
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 170px;
+  background: linear-gradient(to bottom, #326075, #000000);
+}
+.ourteam h1{
+  height: 100%;
+ font-size: 50px;
+  margin-top: 20px;
+  margin-left: 50px;
+  animation: moveText 2s 1;
+  
+  
+}
+@keyframes moveText {
+  0% {
+      margin-top: -40px; /* Start above the container */
+  }
+  50% {
+      margin-top: 5%;  /* Move to the middle of the container */
+      
+      
+  }
+   100% {
+      margin-top: 20px;
+       /* End below the container */
+  } 
+}
+
+.managercard{
+ width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  margin-left:35% ;
+  margin-right:50px ;
+}
+.image img{
+width:  400px;
+height: 420px;
+filter: grayscale();
+}
+
+.image img:hover{
+  filter: none;
+
+}
+.managercard:hover .details{
+  filter: none;
+  display: block;
+}
+
+.details{
+  margin-top: 10px;
+  width: auto;
+  display: none;
+  color: #284b63;
+  animation: details 2s 1;
+}
+@keyframes details {
+      0%{
+        margin-top: -20px; ;
+      }
+      50%{
+        margin-top: 15px; 
+      }
+      100%{
+        margin-top: 10px;
+      }
+}
+hr{
+  border: 2px solid #284b63;
+  animation:line 0.8s 1; 
+}
+@keyframes line {
+  0%{
+    width: 100px;
+  }
+  50%{
+    width: 130px;
+  }
+  100%{
+    width: 190px;
+  }
+
+}
+.head{
+  height: auto;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+.header{
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  border: 2px double #326075;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  
+}
+.headerteam{
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  border: 2px double #326075;
+  margin-top: 30px;
+}
+.teamcard{
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.teamcard .image img{
+  height: 300px;
+  width: 320px;
+
+}
+                                      
+.teamcard:hover .details{
+  filter: none;
+  display: block;
+}
+
+
+
+
+
+
+
+@media (max-width:964px){
+  .head{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+  }
+}
+@media (max-width:770px){
+  .details{
+    display: block;
+  }
+
+}
+@media (max-width:580px){
+  .managercard{
+    margin-left: 15px;
+  }
+  .head{
+    margin-left: 0;
+  }
+  .teamcard{
+    margin-left: 0;
+  }
+  .teamcard .image img{
+    height: 400px;
+    width: 420px;
+  
+  }
+}
+
+
+/* ==========================================================================================                                       */
 
 @media (max-width: 988px) {
   .content{
