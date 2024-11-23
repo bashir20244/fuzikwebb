@@ -5,8 +5,8 @@ import data from '../components/data/data';
 
 const OurTeam = () => {
   return (
-    <main className={styles.ourteampage}>
-    <section className={styles.ourteam} data-aos="fade-down">
+    <main>
+    <section className={styles.ourteam} >
     <div>
       <h1>OUR TEAM</h1>
       </div>  
@@ -24,9 +24,9 @@ const OurTeam = () => {
       </div>
     </section>
     <div className={styles.header}>
-        <h2>Head of department</h2>
+        <h2 className={styles.headofdep}>Head of department</h2>
       </div>
-    <section className={styles.head} data-aos="fade-down">
+    <section className={styles.head} >
      
     <div className={styles.teamcard}>
         <div className={styles.image}>
@@ -59,10 +59,10 @@ const OurTeam = () => {
         <p>{data["project manager"].role}</p>
       </div>
     </section>
-    <div className={styles.headerteam}>
+    <div className={styles.header}>
         <h2>The Team</h2>
       </div>
-      <section className={styles.head} data-aos="fade-down">
+      <section className={styles.head} >
      
     <div className={styles.teamcard}>
         <div className={styles.image}>
@@ -95,7 +95,7 @@ const OurTeam = () => {
         <p>{data["front-end"].role}</p>
       </div>
     </section>
-    <section className={styles.head} data-aos="fade-down">
+    <section className={styles.head} >
      
     <div className={styles.teamcard}>
         <div className={styles.image}>
@@ -128,7 +128,7 @@ const OurTeam = () => {
         <p>{data["back-end"].role}</p>
       </div>
     </section>
-    <section className={styles.head} data-aos="fade-down">
+    <section className={styles.head} >
      
     <div className={styles.teamcard}>
         <div className={styles.image}>
@@ -162,6 +162,7 @@ const OurTeam = () => {
       </div>
     </section>
     </main>
+    
   )
 }
 

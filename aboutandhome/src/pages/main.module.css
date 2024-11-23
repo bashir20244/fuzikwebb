@@ -385,12 +385,12 @@ hr{
   
 }
 .header{
-  height: 50px;
+  height: 100px;
   width: 100%;
   text-align: center;
   border: 2px double #326075;
-  margin-bottom: 30px;
-  margin-top: 30px;
+ /*  margin-bottom: 30px;
+  margin-top: 30px; */
   
 }
 .headerteam{
@@ -400,6 +400,17 @@ hr{
   border: 2px double #326075;
   margin-top: 30px;
 }
+
+.header h2{
+ 
+  background:linear-gradient(to right,#fff,#326075);
+  -webkit-background-clip: text;
+  color: transparent;
+  padding-top: 20px;
+}
+
+
+
 .teamcard{
   height: auto;
   width: auto;
@@ -434,26 +445,45 @@ hr{
   }
 }
 @media (max-width:770px){
+  html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x:hidden ;
+   }
   .details{
     display: block;
   }
 
 }
 @media (max-width:580px){
+ html,body{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x:hidden ;
+ }
   .managercard{
-    margin-left: 15px;
+    margin-left: -10px;
   }
-  .head{
-    margin-left: 0;
-  }
-  .teamcard{
-    margin-left: 0;
-  }
-  .teamcard .image img{
-    height: 400px;
-    width: 420px;
   
+
+  
+  .image img{
+    height: 300px;
+    width: 320px;
   }
+  .header h2{
+    margin-top: -17px;
+    font-size: 33px;
+    padding-top: 50px;
+  }
+ /*  .headerteam h2{
+    font-size: 37px;
+    margin-top: -17px;
+  } */
 }
 
 
